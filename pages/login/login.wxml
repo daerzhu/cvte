@@ -1,0 +1,29 @@
+<view>
+
+<view>登录页面</view>
+
+<view class = "information">
+  
+
+  <view class = "information_line">
+   <view class = "information_item"> 用户名
+   <input class = "item_style" placeholder='请输入用户名' bindinput='getName'></input>
+   </view>
+   <view class="line"></view>
+   </view>
+
+ <view class = "information_line">
+   <view class = "information_item"> 密码
+   <input class = "item_style" placeholder='请输入密码' bindinput='getCode'></input>
+   </view>
+   <view class="line"></view>
+   </view>
+
+   
+</view>
+
+
+ <button class = "next" bindtap = "submit">登录</button>
+
+ <button class = "next" bindtap = "goRegister">去注册</button>
+</view>

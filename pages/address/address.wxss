@@ -1,0 +1,64 @@
+/* pages/address/address.wxss */
+.background1{
+  width:375px;
+  height:109px;
+  position:absolute;
+  z-index:-1;
+  
+}
+
+.title{
+
+  font-family: MicrosoftYaHei;
+font-size: 18px;
+color: #FFFFFF;
+text-align: center;
+line-height: 21px;
+
+
+
+
+}
+
+.l_title{
+  font-family: MicrosoftYaHei;
+font-size: 14px;
+color: rgba(255,255,255,0.80);
+text-align: center;
+line-height: 21px;
+margin-top:13px
+
+}
+.content{
+  margin-top:50px;
+}
+.item{
+  width:375px;
+  height:60px;
+  display: flex;
+  
+}
+
+.information_item{
+  font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #464646;
+line-height: 16px;
+margin-top:27px;
+margin-left:12px
+}
+
+.item_style{
+  font-family: PingFangSC-Regular;
+font-size: 14px;
+color: #AAAAAA;
+line-height: 16px;
+margin-top:32px;
+margin-left:110px;
+margin-top:22px
+}
+
+.picker{
+  margin-left:30px;
+  margin-top:25px;
+}

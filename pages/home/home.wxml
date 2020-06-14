@@ -1,0 +1,54 @@
+<!--pages/home/home.wxml-->
+<view>
+<view class="header">
+<image class = "background1" src="{{imageSrc1}} " ></image>
+<view class ="title">这里是一个大标题</view>
+<view class = "l_title">已有人参加活动</view>
+</view>
+
+<view class = "lottery">
+<image class = "background2" src="{{imageSrc2}} "></image>
+<view class = "begin" bindtap="draw">
+<view >开始</view>
+<view >抽奖</view>
+</view>
+<view class="number">今日抽奖次数</view>
+<view class = "time">12</view>
+</view>
+
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showModal}}"></view>
+<view  wx:if="{{showModal}}">
+  <view class = "modalDlg">
+    <view class="m_title">活动标题</view>
+    <view class="m_content">
+   <text> 1、 如您成功中奖,请务必在24小时内点击“立即领取”,并填写联系人、手机号、邮寄地址等信息,以便统计发奖；若不在规定时间内点击领奖并填写信息,则视为自动放弃该奖项；\n
+   2、奖品发放：所有奖品的发放都将以您抽奖后填写的邮寄信息为依据,请确保填写无误。
+      (1)精美课件包:系统将在活动结束后的7个工作日内,将课件获取链接通过希沃学院站内信发送至您的账号;\n
+   3、点击这里下载希沃白板5进行高效备课规则活动规</text>
+    </view>
+    </view>
+    <view bindtap="go" ><image class = "close" src="{{imageSrc3}} "></image></view>
+</view>
+
+<view class="mask" catchtouchmove="preventTouchMove" wx:if="{{showRecord}}"></view>
+<view  wx:if="{{showRecord}}">
+  <view class = "modalDlg">
+    <view class="m_title">中奖纪录</view>
+    <view class="m_content">
+     123
+    </view>
+    </view>
+    <view class = "r_bottom">
+    <view class = "r_btn_1" bindtap="go1" ><image class="r_btn_1_p"  src="{{imageSrc5}} "></image></view>
+    <view class = "r_btn_2" bindtap = "jump"><image class="r_btn_2_p"  src="{{imageSrc4}} "></image></view>
+    </view>
+</view>
+
+
+
+<view class ="bottom">
+<button class = "btn"  bindtap = "submit">活动规则</button>
+<button class = "btn" bindtap = "record">中奖纪录</button>
+</view>
+</view>

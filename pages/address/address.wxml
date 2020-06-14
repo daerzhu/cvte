@@ -1,0 +1,44 @@
+<!--pages/address/address.wxml-->
+<view>
+
+<view class = "header">
+<image class = "background1" src ="{{imageSrc1}}">
+
+</image>
+<view class ="title">请填写并认真核对您的收货信息</view>
+<view class = "l_title">实物奖品我们将通过快递的形式寄送，具体发货时间请查看活动规则。</view>
+
+
+</view>
+
+<view class = "content">
+<view class = "item">
+<view class = "information_item">收件人</view>
+<input class = "item_style" placeholder='请输入收件人姓名' bindinput='getName'></input>
+</view>
+
+<view class = "item">
+<view class = "information_item">联系电话</view>
+<input class = "item_style" placeholder='收件人电话号码' bindinput='getPhone'></input>
+</view>
+
+<view class = "item">
+<view class = "information_item">所在地区</view>
+<view class="section">
+  
+  <picker mode="region" bindchange="bindRegionChange" value="{{region}}" custom-item="{{customItem}}">
+    <view class="picker">
+      当前选择：{{region[0]}}，{{region[1]}}，{{region[2]}}
+    </view>
+  </picker>
+</view>
+</view>
+
+
+<view class = "item">
+<view class = "information_item">详细地址</view>
+<input class = "item_style" placeholder='请输入详细地址' bindinput='getAddress'></input>
+</view>
+
+</view>
+</view>
